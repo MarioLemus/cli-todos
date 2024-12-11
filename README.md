@@ -11,8 +11,8 @@ Execute app
 ```py
 $ python cli-todos/main.py 
 ```
-```
-```
+
+cuak
 ```
 
 
