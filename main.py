@@ -1,7 +1,6 @@
 from enum import Enum
 import sys
 import json
-import time
 
 
 class AvailableOptions(Enum):
@@ -22,40 +21,18 @@ def rewrite_db(todos_array):
         json.dump(todos_array, db, indent=4)
 
 
-def format_id_user_readable(id):
-    # 4 digits sets
-    set_length = 4
-    formatted_id = ''
-
-    for index, letter in enumerate(f"{id}"):
-        # check if index is a multiple of set_length
-        if (index + 1) % set_length == 0:
-            formatted_id += letter
-            formatted_id += '-'
-            continue
-        formatted_id += letter
-    
-    return formatted_id
-
-
-def transform_unformatted_id(id):
-    return "".join(f"{id}".split('-'))
-
-
 def show_all():
     if len(read_db()) == 0:
         print('\n No todos yet')
         return
 
-    for todo in read_db():
-        print(f'[{'x' if todo['completed'] else ' '}] id: {format_id_user_readable(todo['id'])} >  todo: {todo['todo']}')
+    for index, todo in enumerate(read_db()):
+        print(f'[{'x' if todo['completed'] else ' '}] id: {index + 1} >  todo: {todo['todo']}')
 
 
 def add(str):
-    unique_id = int(time.time() * 1000)
     temp_db = []
     formatted_todo = {
-        'id': unique_id,
         'todo': str,
         'completed': False
     }
@@ -71,21 +48,19 @@ def add(str):
 
 def delete(id):
     temp_db = []
-    id = transform_unformatted_id(id)
 
-    for todo in read_db():
-        if todo['id'] != int(id):
+    for index, todo in enumerate(read_db()):
+        if index != (int(id) - 1) :
             temp_db.append(todo)
     rewrite_db(temp_db)
 
 
 def mark_as_completed(id):
     temp_db = []
-    id = transform_unformatted_id(id)
-
-    for todo in read_db():
-        if todo['id'] == int(id):
-            todo['completed'] = True        
+    
+    for index, todo in enumerate(read_db()):
+        if index == (int(id) - 1):
+            todo['completed'] = True
         temp_db.append(todo)
     rewrite_db(temp_db)
 
@@ -102,20 +77,26 @@ def options_manager():
 
     if user_selection == AvailableOptions.ADD.value:
         todo = input('\nTodo: ').strip().lower()
+        print('')
         add(todo)
         options_manager()
+
     elif user_selection == AvailableOptions.DELETE.value:
         deletion_id = input('\nTodo ID: ').strip().lower()
+        print('')
         delete(deletion_id)
         options_manager()
+
     elif user_selection == AvailableOptions.COMPLETED.value:
         completion_id = input('\nTodo ID: ').strip().lower()
+        print('')
         mark_as_completed(completion_id)
         options_manager()
+
     elif user_selection == AvailableOptions.QUIT.value:
         sys.exit(0)        
     else:
-        print('\nInvalid option')
+        print('\nInvalid option\n')
 
 
 def main():
