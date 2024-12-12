@@ -1,7 +1,7 @@
 from enum import Enum
 import sys
 import json
-
+import os
 
 class AvailableOptions(Enum):
     COMPLETED = 'c'
@@ -9,15 +9,20 @@ class AvailableOptions(Enum):
     ADD = 'a'
     DELETE = 'd'
 
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+json_path = os.path.join(script_dir, 'db.json')
+
+
 # UTILS
 def read_db():
-    with open('db.json', 'r') as db:
+    with open(json_path, 'r') as db:
         db_instance = json.load(db)
     return db_instance
 
 
 def rewrite_db(todos_array):
-    with open('db.json', 'w') as db:
+    with open(json_path, 'w') as db:
         json.dump(todos_array, db, indent=4)
 
 
