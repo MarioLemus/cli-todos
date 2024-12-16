@@ -1,26 +1,14 @@
 [
     {
-        "todo": "change unique id system for index ids",
+        "todo": "implement user/auth handling in novels_api",
         "completed": false
     },
     {
-        "todo": "research 1 popular animation library",
+        "todo": "use role service instead of role entity in auth service",
         "completed": false
     },
     {
-        "todo": "experiment with new animations knowledge builing 3 demos",
-        "completed": false
-    },
-    {
-        "todo": "finish novel app rest api",
-        "completed": false
-    },
-    {
-        "todo": "research reddis",
-        "completed": false
-    },
-    {
-        "todo": "build 3 demos using reddis from noob to pro",
+        "todo": "search strategies to problme solve code challenges faster",
         "completed": false
     }
 ]
