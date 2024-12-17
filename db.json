@@ -5,10 +5,26 @@
     },
     {
         "todo": "use role service instead of role entity in auth service",
-        "completed": false
+        "completed": true
     },
     {
         "todo": "search strategies to problme solve code challenges faster",
+        "completed": false
+    },
+    {
+        "todo": "install intellij idea",
+        "completed": true
+    },
+    {
+        "todo": "continue with sql learning in codecademy for 1 pomodoro cicle",
+        "completed": false
+    },
+    {
+        "todo": "continue with java course in codecademy",
+        "completed": false
+    },
+    {
+        "todo": "start a project with the knowledge learnt",
         "completed": false
     }
 ]

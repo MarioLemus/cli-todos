@@ -32,6 +32,7 @@ def show_all():
         return
 
     for index, todo in enumerate(read_db()):
+        if todo['completed'] == True: continue
         print(f'[{'x' if todo['completed'] else ' '}] id: {index + 1} >  todo: {todo['todo']}')
 
 
