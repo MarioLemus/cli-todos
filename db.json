@@ -17,14 +17,18 @@
     },
     {
         "todo": "continue with sql learning in codecademy for 1 pomodoro cicle",
+        "completed": true
+    },
+    {
+        "todo": "learn sql for 1 pomodoro cycle",
+        "completed": true
+    },
+    {
+        "todo": "learn java for 1 pomodoro cycle",
         "completed": false
     },
     {
-        "todo": "continue with java course in codecademy",
-        "completed": false
-    },
-    {
-        "todo": "start a project with the knowledge learnt",
-        "completed": false
+        "todo": "do physical excercise for 1 p/c",
+        "completed": true
     }
 ]
