@@ -25,10 +25,46 @@
     },
     {
         "todo": "learn java for 1 pomodoro cycle",
-        "completed": false
+        "completed": true
     },
     {
         "todo": "do physical excercise for 1 p/c",
         "completed": true
+    },
+    {
+        "todo": "get to know what are the ways of app deploying that exist",
+        "completed": false
+    },
+    {
+        "todo": "leant the basics of how a bussinnes works 1p/c",
+        "completed": false
+    },
+    {
+        "todo": "understand request headers 2p/c",
+        "completed": false
+    },
+    {
+        "todo": "create rules to delimit the number of new todos that can be added everyday",
+        "completed": false
+    },
+    {
+        "todo": "physical excercise 2p/c",
+        "completed": false
+    },
+    {
+        "todo": "java 1p/c max 5p/c",
+        "completed": true
+    },
+    {
+        "todo": "sql 1p/c max 4p/c",
+        "completed": false
+    },
+    {
+        "todo": "create a novel scrapping service with java",
+        "completed": false
+    },
+    {
+        "todo": "practice how to use microservices",
+        "completed": false
     }
 ]
