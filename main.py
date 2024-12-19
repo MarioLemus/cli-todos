@@ -8,6 +8,7 @@ class AvailableOptions(Enum):
     QUIT = 'q'
     ADD = 'a'
     DELETE = 'd'
+    RULES = 'r'
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -33,7 +34,7 @@ def show_all():
 
     for index, todo in enumerate(read_db()):
         if todo['completed'] == True: continue
-        print(f'[{'x' if todo['completed'] else ' '}] id: {index + 1} >  todo: {todo['todo']}')
+        print(f'[{'x' if todo['completed'] else ' '}] id: {f"0{index+1}" if index <=8 else index + 1} >  todo: {todo['todo']}')
 
 
 def add(str):
@@ -71,16 +72,28 @@ def mark_as_completed(id):
     rewrite_db(temp_db)
 
 
-def display_info():
+def display_todo_creation_rules():
+    rules = [
+        "No more than 5 todos can be available simoultaneously",
+        "Addition of new todos is limited to max 5 per day (Mon to Fri)",
+        "Todos must be well delimited and be specific (micro todos)",
+        "Every starting todo should be short timed enough to do it even if you dont want\n"        
+    ]
+
+    for index, rule in enumerate(rules):
+        print(f"{(index+1)}. {rule}")
+
+
+def display_general_info():
     show_all()
     print("\nSee all the available \"weekly todos\"")
-    print("-> other options: \n(c) mark as complete \n(a) add todos \n(d) delete todo \n(q) quit")
+    print("-> other options: \n(c) mark as complete \n(a) add todos \n(d) delete todo \n(r) rules \n(q) quit")
 
 
 def options_manager():
-    display_info()
+    display_general_info()
     user_selection = input('\n> ').strip().lower()
-
+    print(user_selection)
     if user_selection == AvailableOptions.ADD.value:
         todo = input('\nTodo: ').strip().lower()
         print('')
@@ -98,9 +111,14 @@ def options_manager():
         print('')
         mark_as_completed(completion_id)
         options_manager()
+     
+    elif user_selection == AvailableOptions.RULES.value:
+        display_todo_creation_rules()
+        options_manager()
 
     elif user_selection == AvailableOptions.QUIT.value:
         sys.exit(0)        
+    
     else:
         print('\nInvalid option\n')
 

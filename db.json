@@ -1,15 +1,7 @@
 [
     {
-        "todo": "implement user/auth handling in novels_api",
-        "completed": false
-    },
-    {
         "todo": "use role service instead of role entity in auth service",
         "completed": true
-    },
-    {
-        "todo": "search strategies to problme solve code challenges faster",
-        "completed": false
     },
     {
         "todo": "install intellij idea",
@@ -32,39 +24,31 @@
         "completed": true
     },
     {
-        "todo": "get to know what are the ways of app deploying that exist",
-        "completed": false
-    },
-    {
-        "todo": "leant the basics of how a bussinnes works 1p/c",
-        "completed": false
-    },
-    {
-        "todo": "understand request headers 2p/c",
-        "completed": false
-    },
-    {
         "todo": "create rules to delimit the number of new todos that can be added everyday",
-        "completed": false
-    },
-    {
-        "todo": "physical excercise 2p/c",
-        "completed": false
+        "completed": true
     },
     {
         "todo": "java 1p/c max 5p/c",
         "completed": true
     },
     {
-        "todo": "sql 1p/c max 4p/c",
+        "todo": "learn sql 1p/c",
         "completed": false
     },
     {
-        "todo": "create a novel scrapping service with java",
+        "todo": "learn java 1p/c",
         "completed": false
     },
     {
-        "todo": "practice how to use microservices",
+        "todo": "do exercise 1p/c",
+        "completed": false
+    },
+    {
+        "todo": "work in a new coding project 1p/c",
+        "completed": false
+    },
+    {
+        "todo": "implement jwt in signup method user/auth",
         "completed": false
     }
 ]
