@@ -33,22 +33,130 @@
     },
     {
         "todo": "learn sql 1p/c",
-        "completed": false
+        "completed": true
     },
     {
         "todo": "learn java 1p/c",
-        "completed": false
+        "completed": true
     },
     {
         "todo": "do exercise 1p/c",
-        "completed": false
+        "completed": true
     },
     {
         "todo": "work in a new coding project 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "implement jwt verification in login/auth",
+        "completed": true
+    },
+    {
+        "todo": "java 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "sql 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "do exercise 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "work in auth/refreshtoken",
+        "completed": true
+    },
+    {
+        "todo": "java 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "sql 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "exercise 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "gcloud 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "solve 1 challenge in advent js",
+        "completed": true
+    },
+    {
+        "todo": "java 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "sql 1/c",
+        "completed": true
+    },
+    {
+        "todo": "1 6kyu challenge",
+        "completed": true
+    },
+    {
+        "todo": "todome 2p/c",
+        "completed": true
+    },
+    {
+        "todo": "work in todome",
+        "completed": true
+    },
+    {
+        "todo": "work in my novel",
+        "completed": true
+    },
+    {
+        "todo": "ordenar mi vida",
+        "completed": true
+    },
+    {
+        "todo": "create a cv in spanish",
+        "completed": true
+    },
+    {
+        "todo": "study backend roadmap 1p/c",
+        "completed": true
+    },
+    {
+        "todo": "do exercise rutine",
+        "completed": true
+    },
+    {
+        "todo": "apply to factory",
+        "completed": true
+    },
+    {
+        "todo": "learn a bit about excel",
+        "completed": true
+    },
+    {
+        "todo": "do something creative in figma",
+        "completed": true
+    },
+    {
+        "todo": "analize everything tech related i know and become the best at it, also find complementary technologies that can be helpful in my workflow",
+        "completed": true
+    },
+    {
+        "todo": "implement error handling for unknown option selection",
         "completed": false
     },
     {
-        "todo": "implement jwt in signup method user/auth",
+        "todo": "implement simoultaneous deletion",
+        "completed": false
+    },
+    {
+        "todo": "implement auto repetitives task",
+        "completed": false
+    },
+    {
+        "todo": "implement total deletion",
         "completed": false
     }
 ]
