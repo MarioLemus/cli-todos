@@ -217,38 +217,50 @@
     },
     {
         "todo": "implement error handling for unknown option selection",
-        "completed": false,
+        "completed": true,
         "completion_time": "00:01:01",
         "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement simoultaneous deletion",
-        "completed": false,
+        "completed": true,
         "completion_time": "00:01:01",
         "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement auto repetitives task",
-        "completed": false,
+        "completed": true,
         "completion_time": "00:01:01",
         "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement total deletion",
-        "completed": false,
+        "completed": true,
         "completion_time": "00:01:01",
         "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "test3",
-        "completed": false,
+        "completed": true,
         "completion_time": "23:16:54.516146",
         "completion_date": "2025-01-28"
     },
     {
-        "todo": "test4",
+        "todo": "test1",
         "completed": true,
-        "completion_time": "20:26:15.053633",
+        "completion_time": "22:04:42.190847",
+        "completion_date": "2025-01-29"
+    },
+    {
+        "todo": "test",
+        "completed": false,
+        "completion_time": "22:04:46.398568",
+        "completion_date": "2025-01-29"
+    },
+    {
+        "todo": "test3",
+        "completed": false,
+        "completion_time": "22:04:54.062225",
         "completion_date": "2025-01-29"
     }
 ]

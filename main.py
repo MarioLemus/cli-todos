@@ -1,12 +1,10 @@
 import sys
-from datetime import date, datetime
 from app.services.db_service import DbService
 from app.constants.available_user_options import AvailableUserOptions
 from app.utils.get_current_date_time_gmt_6 import current_date_time
 
 
 db_service = DbService()
-
 
 def show_all():
     if len(db_service.get()) == 0:
@@ -84,7 +82,6 @@ def options_manager():
 
 def main():
     options_manager()
-
 
 
 main()

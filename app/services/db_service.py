@@ -2,11 +2,7 @@ import json
 import os
 from app.utils.db_entity_handler import DbEntityHandler
 from app.utils.get_current_date_time_gmt_6 import current_date_time
-
-
-script_dir = os.path.dirname(os.path.abspath('main.py'))
-json_path = os.path.join(script_dir, 'db.json')
-
+from app.constants.json_working import json_db_abs_path
 
 class DbService:
     def __init__(self):
@@ -71,7 +67,7 @@ class DbService:
 
     def get(self):
         try:
-            with open(json_path, 'r') as db:
+            with open(json_db_abs_path, 'r') as db:
                 content = db.read().strip()  # Elimina espacios en blanco al inicio y fin
 
                 if not content:

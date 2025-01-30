@@ -1,12 +1,9 @@
 import json
-import os
-
-script_dir = os.path.dirname(os.path.abspath('main.py'))
-json_path = os.path.join(script_dir, 'db.json')
+from app.constants.json_working import json_db_abs_path
 
 class DbEntityHandler:
     def write_db(self, todos_array):
-        with open(json_path, 'w') as db:
+        with open(json_db_abs_path, 'w') as db:
             json.dump(todos_array, db, indent=4)
 
 
