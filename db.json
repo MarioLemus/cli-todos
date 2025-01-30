@@ -1,162 +1,254 @@
 [
     {
         "todo": "use role service instead of role entity in auth service",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "install intellij idea",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "continue with sql learning in codecademy for 1 pomodoro cicle",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "learn sql for 1 pomodoro cycle",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "learn java for 1 pomodoro cycle",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "do physical excercise for 1 p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "create rules to delimit the number of new todos that can be added everyday",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "java 1p/c max 5p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "learn sql 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "learn java 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "do exercise 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "work in a new coding project 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement jwt verification in login/auth",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "java 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "sql 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "do exercise 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "work in auth/refreshtoken",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "java 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "sql 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "exercise 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "gcloud 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "solve 1 challenge in advent js",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "java 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "sql 1/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "1 6kyu challenge",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "todome 2p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "work in todome",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "work in my novel",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "ordenar mi vida",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "create a cv in spanish",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "study backend roadmap 1p/c",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "do exercise rutine",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "apply to factory",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "learn a bit about excel",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "do something creative in figma",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "analize everything tech related i know and become the best at it, also find complementary technologies that can be helpful in my workflow",
-        "completed": true
+        "completed": true,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement error handling for unknown option selection",
-        "completed": false
+        "completed": false,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement simoultaneous deletion",
-        "completed": false
+        "completed": false,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement auto repetitives task",
-        "completed": false
+        "completed": false,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
     },
     {
         "todo": "implement total deletion",
-        "completed": false
+        "completed": false,
+        "completion_time": "00:01:01",
+        "completion_date": "2024-12-25T00:00:00"
+    },
+    {
+        "todo": "test3",
+        "completed": false,
+        "completion_time": "23:16:54.516146",
+        "completion_date": "2025-01-28"
+    },
+    {
+        "todo": "test4",
+        "completed": true,
+        "completion_time": "20:26:15.053633",
+        "completion_date": "2025-01-29"
     }
 ]

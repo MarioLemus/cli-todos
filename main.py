@@ -1,33 +1,33 @@
 import sys
-import os
-from app import db_repo
-from app.db_repo import DBRepo
+from datetime import date, datetime
+from app.services.db_service import DbService
 from app.constants.available_user_options import AvailableUserOptions
+from app.utils.get_current_date_time_gmt_6 import current_date_time
 
-AvailableOptions = AvailableUserOptions
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-json_path = os.path.join(script_dir, 'db.json')
+db_service = DbService()
 
 
 def show_all():
-    if len(read_db()) == 0:
+    if len(db_service.get()) == 0:
         print('\n No todos yet')
         return
 
-    for index, todo in enumerate(read_db()):
-        if todo['completed'] == True: continue
-        print(f'[{'x' if todo['completed'] else ' '}] id: {f"0{index+1}" if index <=8 else index + 1} >  todo: {todo['todo']}')
+    for index, todo in enumerate(db_service.get()):
+        if todo['completion_date'] < current_date_time()['date'] and todo['completed'] == True:
+            continue
+        
+        if todo['completed']:
+            print(f"[x] id: {index + 1} > todo: {todo['todo']}")
+            continue
+        elif index <= 8:
+            print(f"[ ] id: 0{index + 1} > todo: {todo['todo']}")
+        else:
+            print(f"[ ] id: {index + 1} > todo: {todo['todo']}")
 
 
 def mark_as_completed(id):
-    temp_db = []
-    
-    for index, todo in enumerate(read_db()):
-        if index == (int(id) - 1):
-            todo['completed'] = True
-        temp_db.append(todo)
-    rewrite_db(temp_db)
+    db_service.update_one(id, {"completed": True})
 
 
 def display_todo_creation_rules():
@@ -52,38 +52,39 @@ def options_manager():
     display_general_info()
     user_selection = input('\n> ').strip().lower()
     print(user_selection)
-    if user_selection == AvailableOptions.ADD.value:
+    if user_selection == AvailableUserOptions.ADD.value:
         todo = input('\nTodo: ').strip().lower()
         print('')
-        add(todo)
+        db_service.add_one(todo)
         options_manager()
 
-    elif user_selection == AvailableOptions.DELETE.value:
+    elif user_selection == AvailableUserOptions.DELETE.value:
         deletion_id = input('\nTodo ID: ').strip().lower()
         print('')
-        delete(deletion_id)
+        db_service.delete_one(deletion_id)
         options_manager()
 
-    elif user_selection == AvailableOptions.COMPLETED.value:
+    elif user_selection == AvailableUserOptions.COMPLETED.value:
         completion_id = input('\nTodo ID: ').strip().lower()
         print('')
         mark_as_completed(completion_id)
         options_manager()
      
-    elif user_selection == AvailableOptions.RULES.value:
+    elif user_selection == AvailableUserOptions.RULES.value:
         display_todo_creation_rules()
         options_manager()
 
-    elif user_selection == AvailableOptions.QUIT.value:
-        sys.exit(0)        
+    elif user_selection == AvailableUserOptions.QUIT.value:
+        sys.exit(0)
     
     else:
         print('\nInvalid option\n')
+        options_manager()
 
 
 def main():
-    db_repo = DBRepo()
     options_manager()
+
 
 
 main()
