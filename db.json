@@ -252,15 +252,45 @@
         "completion_date": "2025-01-29"
     },
     {
-        "todo": "test",
+        "todo": "automate the process of vm launch after windows boot",
         "completed": false,
-        "completion_time": "22:04:46.398568",
-        "completion_date": "2025-01-29"
+        "completion_time": "11:23:41.775319",
+        "completion_date": "2025-01-30"
     },
     {
-        "todo": "test3",
+        "todo": "continue learning gcloud",
         "completed": false,
-        "completion_time": "22:04:54.062225",
-        "completion_date": "2025-01-29"
+        "completion_time": "11:24:56.953478",
+        "completion_date": "2025-01-30"
+    },
+    {
+        "todo": "try to get some client in freelance webs",
+        "completed": false,
+        "completion_time": "11:25:26.758456",
+        "completion_date": "2025-01-30"
+    },
+    {
+        "todo": "working in my novel app",
+        "completed": false,
+        "completion_time": "11:25:47.394010",
+        "completion_date": "2025-01-30"
+    },
+    {
+        "todo": "continue working in the chapters of my novel",
+        "completed": true,
+        "completion_time": "19:34:14.999983",
+        "completion_date": "2025-01-30"
+    },
+    {
+        "todo": "apply to 5 job offers",
+        "completed": false,
+        "completion_time": "20:08:09.541695",
+        "completion_date": "2025-01-30"
+    },
+    {
+        "todo": "allow shared folders vmware",
+        "completed": false,
+        "completion_time": "15:16:00.280896",
+        "completion_date": "2025-01-31"
     }
 ]

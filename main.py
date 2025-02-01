@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 from app.services.db_service import DbService
 from app.constants.available_user_options import AvailableUserOptions
