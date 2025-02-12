@@ -13,7 +13,7 @@ def show_all():
         return
 
     for index, todo in enumerate(db_service.get()):
-        if todo['completion_date'] < current_date_time()['date'] and todo['completed'] == True:
+        if todo['completion_date'] != None and todo['completion_date'] < current_date_time()['date'] and todo['completed'] == True:
             continue
         
         if todo['completed']:
@@ -26,7 +26,11 @@ def show_all():
 
 
 def mark_as_completed(id):
-    db_service.update_one(id, {"completed": True})
+    db_service.update_one(id, {
+        "completed": True,
+        "completion_time": (current_date_time())['time'], 
+        "completion_date": (current_date_time())['date']
+    })
 
 
 def display_todo_creation_rules():

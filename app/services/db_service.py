@@ -1,7 +1,5 @@
 import json
-import os
 from app.utils.db_entity_handler import DbEntityHandler
-from app.utils.get_current_date_time_gmt_6 import current_date_time
 from app.constants.json_working import json_db_abs_path
 
 class DbService:
@@ -13,8 +11,8 @@ class DbService:
         formatted_todo = {
             'todo': todo, 
             'completed': False, 
-            'completion_time': (current_date_time())['time'], 
-            'completion_date': (current_date_time())['date']
+            'completion_time': None, 
+            'completion_date': None
         }
 
         temp_db.extend(self.get())
@@ -26,21 +24,28 @@ class DbService:
         except Exception:
             print('Something went wrong while adding todo!\n')
 
-
+    # TODO: UPDATE FUNCTIONALITY NOT IMPLEMENTED YET
     def update_one(self, id, newData):
         temp_db = []
      
         for index, todo in enumerate(self.get()):
             if index == (int(id) - 1):
                 for field_to_update in newData.keys():
+                    # TODO: the condition logic can be added in a 'condition dict' so it can make complex condition more understandable
+                    conditions = {
+                        'curr_field_is_filled': todo[field_to_update] != None,
+                        'curr_and_new_field_not_same_datatype': type(todo[field_to_update]) != type(newData[field_to_update]),
+                        'new_field_value_is_empty_string': (type(newData[field_to_update]) == 'str') and (len(newData[field_to_update]) == 0)
+                    }
+
                     if field_to_update == ('id' or 'ID'):
                         continue
 
                     try:
-                        if (type(todo[field_to_update]) != type(newData[field_to_update])):
+                        if conditions['curr_field_is_filled'] and conditions['curr_and_new_field_not_same_datatype']:
                             print(f"'{field_to_update}' has to be of the same datatype")
                             break
-                        if ((type(newData[field_to_update]) == 'str') and len(newData[field_to_update]) == 0):
+                        if conditions['new_field_value_is_empty_string']:
                             continue
                         todo[field_to_update] = newData[field_to_update]
                     except:
