@@ -13,13 +13,10 @@ def show_all():
         return
 
     for index, todo in enumerate(db_service.get()):
-        if todo['completion_date'] != None and todo['completion_date'] < current_date_time()['date'] and todo['completed'] == True:
+        if todo['completion_date'] != None and todo['completed'] == True:
             continue
         
-        if todo['completed']:
-            print(f"[x] id: {index + 1} > todo: {todo['todo']}")
-            continue
-        elif index <= 8:
+        if index <= 8:
             print(f"[ ] id: 0{index + 1} > todo: {todo['todo']}")
         else:
             print(f"[ ] id: {index + 1} > todo: {todo['todo']}")
@@ -70,6 +67,7 @@ def options_manager():
     elif user_selection == AvailableUserOptions.COMPLETED.value:
         completion_id = input('\nTodo ID: ').strip().lower()
         print('')
+        print(completion_id)
         mark_as_completed(completion_id)
         options_manager()
      
